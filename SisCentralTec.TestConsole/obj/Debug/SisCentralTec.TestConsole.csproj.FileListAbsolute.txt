@@ -1,0 +1,11 @@
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentralTec.TestConsole.csproj.AssemblyReference.cache
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentralTec.TestConsole.Properties.Resources.resources
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentralTec.TestConsole.csproj.GenerateResource.cache
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentralTec.TestConsole.csproj.CoreCompileInputs.cache
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\bin\Debug\SisCentralTec.TestConsole.exe
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\bin\Debug\SisCentralTec.TestConsole.pdb
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\bin\Debug\SisCentralTec.Core.dll
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\bin\Debug\SisCentralTec.Core.pdb
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentr.547A2693.Up2Date
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentralTec.TestConsole.exe
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.TestConsole\obj\Debug\SisCentralTec.TestConsole.pdb

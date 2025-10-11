@@ -1,0 +1,6 @@
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.Core\bin\Debug\SisCentralTec.Core.dll
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.Core\bin\Debug\SisCentralTec.Core.pdb
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.Core\obj\Debug\SisCentralTec.Core.csproj.AssemblyReference.cache
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.Core\obj\Debug\SisCentralTec.Core.csproj.CoreCompileInputs.cache
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.Core\obj\Debug\SisCentralTec.Core.dll
+C:\Users\João Marcos\source\repos\SisCentralTec.Core\SisCentralTec.Core\obj\Debug\SisCentralTec.Core.pdb
