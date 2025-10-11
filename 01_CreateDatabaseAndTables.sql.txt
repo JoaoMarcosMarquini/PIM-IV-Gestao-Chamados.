@@ -1,0 +1,21 @@
+-- Script para criar a estrutura completa do banco de dados
+CREATE DATABASE SisCentralTec;
+GO
+
+USE SisCentralTec;
+GO
+
+CREATE TABLE Usuarios (
+    -- ... colunas da tabela Usuarios ...
+);
+GO
+
+CREATE TABLE Chamados (
+    -- ... colunas da tabela Chamados ...
+);
+GO
+
+CREATE TABLE AcoesChamado (
+    -- ... colunas da tabela AcoesChamado ...
+);
+GO
