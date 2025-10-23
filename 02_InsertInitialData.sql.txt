@@ -1,0 +1,54 @@
+-- Garante que estamos usando o banco de dados correto
+USE SisCentralTec;
+GO
+
+-- ETAPA 1: LIMPEZA COMPLETA DOS DADOS DE TESTE
+DELETE FROM AcoesChamado;
+DELETE FROM Chamados;
+DELETE FROM Usuarios WHERE Id > 1; -- Mantém apenas seu usuário principal com Id = 1
+GO
+
+-- ETAPA 2: REINÍCIO DOS CONTADORES DE ID (ESSENCIAL)
+DBCC CHECKIDENT ('Usuarios', RESEED, 1);
+DBCC CHECKIDENT ('Chamados', RESEED, 0); -- Reinicia em 0 para o primeiro ID ser 1
+DBCC CHECKIDENT ('AcoesChamado', RESEED, 0);
+GO
+
+-- ETAPA 3: INSERÇÃO DOS DADOS NOVOS
+
+-- Inserção de mais usuários (IDs serão 2, 3, 4, 5)
+INSERT INTO Usuarios (Nome, Email, Senha, Perfil, Telefone, Setor, DataNascimento, CPF)
+VALUES
+('Carla Menezes', 'carla@empresa.com', 'senha123', 'Usuário', '(11)98888-2222', 'RH', '1990-07-25', '987.654.321-00'),
+('Pedro Oliveira', 'pedro@empresa.com', 'senha123', 'Técnico', '(11)98888-3333', 'TI', '1985-11-03', '456.123.789-99'),
+('Ana Rocha', 'ana@empresa.com', 'senha123', 'Técnico', '(11)98888-4444', 'TI', '1993-05-08', '789.456.123-00'),
+('Mariana Costa', 'mariana@empresa.com', 'senha123', 'Usuário', '(21)97777-1111', 'Financeiro', '1998-02-15', '111.222.333-44');
+GO
+
+-- Inserção de chamados (um por um para evitar erros de sintaxe)
+INSERT INTO Chamados (IdUsuario, Titulo, Descricao, Categoria, Prioridade, Status) VALUES (2, 'Erro ao acessar sistema de folha', 'Não consigo visualizar meu holerite no sistema de RH. A página exibe um erro 500.', 'Software', 'Alta', 'Aberto');
+INSERT INTO Chamados (IdUsuario, Titulo, Descricao, Categoria, Prioridade, Status) VALUES (5, 'Computador muito lento ao iniciar', 'Meu computador está demorando mais de 5 minutos para ligar e ficar utilizável.', 'Hardware', 'Média', 'Em Atendimento');
+INSERT INTO Chamados (IdUsuario, Titulo, Descricao, Categoria, Prioridade, Status) VALUES (2, 'Solicitação de acesso à pasta da rede', 'Preciso de permissão de leitura na pasta \\servidor\documentos\rh-geral.', 'Acesso', 'Baixa', 'Aberto');
+INSERT INTO Chamados (IdUsuario, Titulo, Descricao, Categoria, Prioridade, Status) VALUES (5, 'E-mail não envia anexos', 'Estou tentando enviar um e-mail com um anexo de 10MB e recebo uma mensagem de erro.', 'E-mail', 'Média', 'Aberto');
+GO
+
+-- Inserção de ações nos chamados (agora os IDs dos chamados existirão)
+-- NOTA: Os IDs dos chamados agora serão 1, 2, 3 e 4.
+INSERT INTO AcoesChamado (IdChamado, IdTecnico, DescricaoAcao, DataAcao)
+VALUES
+(2, 3, 'Analisando a performance do computador. Verificação de malwares e processos em segundo plano iniciada.', GETDATE()),
+(4, 4, 'Verificado que o limite de anexo estava configurado incorretamente no servidor de e-mail. Limite ajustado para 25MB.', GETDATE());
+GO
+
+-- Atualizando o status do chamado 4 para 'Resolvido'
+UPDATE Chamados
+SET Status = 'Resolvido', DataEncerramento = GETDATE()
+WHERE Id = 4;
+GO
+
+-- Verificação final
+SELECT * FROM Usuarios;
+SELECT * FROM Chamados;
+SELECT * FROM AcoesChamado;
+go
+GO
