@@ -1,41 +1,35 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Iniciando teste de cadastro de usuário...");
+        ChamadoRepository repository = new ChamadoRepository();
 
-        // 1. Cria um objeto Usuario com dados de teste
-        Usuario novoUsuario = new Usuario
+        Console.WriteLine("--- Teste de Relatório: Chamados por Categoria ---");
+
+        // Chama o novo método de relatório por categoria
+        Dictionary<string, int> contagemPorCategoria = repository.GetContagemChamadosPorCategoria();
+
+        if (contagemPorCategoria.Count > 0)
         {
-            Nome = "João Marcos",
-            Email = "joao.teste@empresa.com",
-            Senha = "senha123",
-            Perfil = "Admin",
-            Telefone = "17999998888",
-            Setor = "TI",
-            DataNascimento = new DateTime(1995, 10, 20),
-            CPF = "123.456.789-00"
-        };
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Total de chamados por categoria encontrado:");
+            Console.ResetColor();
 
-        // 2. Cria uma instância do nosso repositório
-        UsuarioRepository repository = new UsuarioRepository();
-
-        try
+            foreach (var item in contagemPorCategoria)
+            {
+                Console.WriteLine($"Categoria: {item.Key}, Total: {item.Value}");
+            }
+        }
+        else
         {
-            // 3. Chama o método para adicionar o usuário
-            repository.AdicionarUsuario(novoUsuario);
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Usuário adicionado com sucesso!");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Nenhum chamado encontrado para o relatório.");
             Console.ResetColor();
         }
-        catch (Exception ex)
-        {
-            // Se der algum erro, ele será exibido aqui
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Ocorreu um erro: {ex.Message}");
-            Console.ResetColor();
-        }
+
+        Console.ReadLine();
     }
 }

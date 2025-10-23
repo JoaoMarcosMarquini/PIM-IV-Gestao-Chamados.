@@ -7,11 +7,15 @@
       "RelativeMoniker": "D:0:0:{DF0D9CE4-0884-4C54-8C74-29CE69221727}|SisCentralTec.TestConsole\\SisCentralTec.TestConsole.csproj|solutionrelative:siscentraltec.testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF0D9CE4-0884-4C54-8C74-29CE69221727}|SisCentralTec.TestConsole\\SisCentralTec.TestConsole.csproj|c:\\users\\jo\u00E3o marcos\\source\\repos\\siscentraltec.core\\siscentraltec.testconsole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{42648D78-E658-43CE-B520-15AF78EB2D48}|SisCentralTec.Core\\SisCentralTec.Core.csproj|c:\\users\\jo\u00E3o marcos\\source\\repos\\siscentraltec.core\\siscentraltec.core\\chamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42648D78-E658-43CE-B520-15AF78EB2D48}|SisCentralTec.Core\\SisCentralTec.Core.csproj|solutionrelative:siscentraltec.core\\chamadorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF0D9CE4-0884-4C54-8C74-29CE69221727}|SisCentralTec.TestConsole\\SisCentralTec.TestConsole.csproj|C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\siscentraltec.testconsole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF0D9CE4-0884-4C54-8C74-29CE69221727}|SisCentralTec.TestConsole\\SisCentralTec.TestConsole.csproj|solutionrelative:siscentraltec.testconsole\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42648D78-E658-43CE-B520-15AF78EB2D48}|SisCentralTec.Core\\SisCentralTec.Core.csproj|c:\\users\\jo\u00E3o marcos\\source\\repos\\siscentraltec.core\\siscentraltec.core\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42648D78-E658-43CE-B520-15AF78EB2D48}|SisCentralTec.Core\\SisCentralTec.Core.csproj|C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\siscentraltec.core\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42648D78-E658-43CE-B520-15AF78EB2D48}|SisCentralTec.Core\\SisCentralTec.Core.csproj|solutionrelative:siscentraltec.core\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,11 +38,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChamadoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.Core\\ChamadoRepository.cs",
+              "RelativeDocumentMoniker": "SisCentralTec.Core\\ChamadoRepository.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.Core\\ChamadoRepository.cs",
+              "RelativeToolTip": "SisCentralTec.Core\\ChamadoRepository.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAADwv5YAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T22:25:28.926Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,26 +69,25 @@
               "RelativeDocumentMoniker": "SisCentralTec.TestConsole\\Program.cs",
               "ToolTip": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.TestConsole\\Program.cs",
               "RelativeToolTip": "SisCentralTec.TestConsole\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T00:53:44.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.TestConsole\\Form1.cs",
               "RelativeDocumentMoniker": "SisCentralTec.TestConsole\\Form1.cs",
               "ToolTip": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.TestConsole\\Form1.cs [Design]",
               "RelativeToolTip": "SisCentralTec.TestConsole\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T00:52:57.862Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-07T00:52:57.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.Core\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "SisCentralTec.Core\\UsuarioRepository.cs",
@@ -75,12 +95,11 @@
               "RelativeToolTip": "SisCentralTec.Core\\UsuarioRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T16:11:15.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-05T16:11:15.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AcaoChamado.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.Core\\AcaoChamado.cs",
               "RelativeDocumentMoniker": "SisCentralTec.Core\\AcaoChamado.cs",
@@ -92,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Chamado.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.Core\\Chamado.cs",
               "RelativeDocumentMoniker": "SisCentralTec.Core\\Chamado.cs",
@@ -104,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Marcos\\source\\repos\\SisCentralTec.Core\\SisCentralTec.Core\\Usuario.cs",
               "RelativeDocumentMoniker": "SisCentralTec.Core\\Usuario.cs",

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
+// Método para Relatório: Contagem de chamados por Status
+// Usamos um Dicionário para armazenar o par (Status, Contagem)
+
 public class ChamadoRepository
 {
     // Usamos a mesma connection string
@@ -94,5 +97,66 @@ public class ChamadoRepository
                 comando.ExecuteNonQuery();
             }
         }
+    }
+    public Dictionary<string, int> GetContagemChamadosPorStatus()
+    {
+        // Cria um dicionário vazio para guardar os resultados
+        var contagem = new Dictionary<string, int>();
+
+        using (SqlConnection conexao = new SqlConnection(_connectionString))
+        {
+            conexao.Open();
+
+            // Este comando SQL agrupa os chamados pelo status
+            // e conta quantos existem em cada grupo (COUNT(*))
+            string sqlQuery = "SELECT Status, COUNT(*) as Total FROM Chamados GROUP BY Status";
+
+            using (SqlCommand comando = new SqlCommand(sqlQuery, conexao))
+            {
+                using (SqlDataReader reader = comando.ExecuteReader())
+                {
+                    // Loop para ler cada linha do resultado (ex: 'Aberto', 2)
+                    while (reader.Read())
+                    {
+                        // Pega o nome do status (ex: "Aberto")
+                        string status = reader["Status"].ToString();
+
+                        // Pega o total contado (ex: 2)
+                        int total = Convert.ToInt32(reader["Total"]);
+
+                        // Adiciona o par ao dicionário
+                        contagem.Add(status, total);
+                    }
+                }
+            }
+        }
+        return contagem; // Retorna o dicionário preenchido
+    }
+    // Método para Relatório: Contagem de chamados por Categoria
+    public Dictionary<string, int> GetContagemChamadosPorCategoria()
+    {
+        var contagem = new Dictionary<string, int>();
+
+        using (SqlConnection conexao = new SqlConnection(_connectionString))
+        {
+            conexao.Open();
+
+            // A única mudança é agrupar por 'Categoria' em vez de 'Status'
+            string sqlQuery = "SELECT Categoria, COUNT(*) as Total FROM Chamados GROUP BY Categoria";
+
+            using (SqlCommand comando = new SqlCommand(sqlQuery, conexao))
+            {
+                using (SqlDataReader reader = comando.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        string categoria = reader["Categoria"].ToString();
+                        int total = Convert.ToInt32(reader["Total"]);
+                        contagem.Add(categoria, total);
+                    }
+                }
+            }
+        }
+        return contagem;
     }
 }
