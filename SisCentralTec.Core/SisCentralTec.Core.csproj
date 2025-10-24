@@ -43,6 +43,8 @@
     <Compile Include="AcaoChamadoRepository.cs" />
     <Compile Include="Chamado.cs" />
     <Compile Include="ChamadoRepository.cs" />
+    <Compile Include="FaqItem.cs" />
+    <Compile Include="FaqRepository.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioRepository.cs" />
